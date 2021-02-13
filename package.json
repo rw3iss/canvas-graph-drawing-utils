@@ -1,0 +1,47 @@
+{
+    "name": "graph-client",
+    "version": "1.0.0",
+    "author": "Ryan Weiss (rw3iss@gmail.com)",
+    "license": "ISC",
+    "description": "",
+    "main": "build/app.js",
+    "scripts": {
+        "setup": "sudo npm install -g browser-sync nodemon && npm install",
+        "dev": "concurrently --kill-others \"npm run start-build-watcher\" \"npm run start-browser-sync\"",
+        "start-build-watcher": "nodemon --watch 'src/**/*' -e ts,tsx,js,jsx,scss,html --exec \"node build\"",
+        "start-browser-sync": "node hot-launch",
+        "build": "node build",
+        "serve": "serve -l 4500 build",
+        "test": "jest"
+    },
+    "sideEffects": false,
+    "dependencies": {
+        "history": "^5.0.0",
+        "isomorphic-fetch": "^3.0.0",
+        "preact": "^10.5.10",
+        "preact-router": "^3.2.1"
+    },
+    "devDependencies": {
+        "@types/jest": "^26.0.20",
+        "@types/node": "^14.14.10",
+        "@typescript-eslint/eslint-plugin": "^4.15.0",
+        "@typescript-eslint/parser": "^4.15.0",
+        "browser-sync": "^2.26.13",
+        "concurrently": "^5.3.0",
+        "enzyme": "^3.11.0",
+        "enzyme-adapter-preact-pure": "^3.0.0",
+        "esbuild": "^0.8.16",
+        "eslint": "^7.20.0",
+        "fetch-mock": "^9.11.0",
+        "jest": "^26.6.3",
+        "jsdom": "16.4.0",
+        "jsdom-global": "3.0.2",
+        "node-sass": "^5.0.0",
+        "node-sass-alias-importer": "^1.0.0",
+        "ts-jest": "^26.5.0",
+        "typescript": "^4.1.4"
+    },
+    "jest": {
+        "verbose": true
+    }
+}

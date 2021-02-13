@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "outDir": "./build/",       // path to output directory
+        "sourceMap": true,          // allow sourcemap support
+        "strictNullChecks": true,   // enable strict null checks as a best practice
+        "module": "commonjs",       // specifiy module code generation
+        "target": "ES2017",         // specify ECMAScript target version
+        "jsx": "react",             // use typescript to transpile jsx to js
+        "jsxFactory": "h",
+        "allowJs": true,            // allow a partial TypeScript and JavaScript codebase  
+        "noImplicitThis": true,
+        "noImplicitReturns": false,
+
+        // Not sure if either of these are necessary:   
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+
+        "paths": {
+            "app/*":        ["./*"],
+            "components/*": ["./components/*"],
+            "config/*":     ["./config/*"],
+            "data/*":       ["./data/*"],
+            "styles/*":     ["./styles/*"],
+            "utils/*":      ["./lib/utils/*"]
+        }
+    },
+    "include": [
+        "src/*"
+    ],
+    "exclude": [
+        "../node_modules/**/*",
+        "./build/*"
+    ]
+
+}
