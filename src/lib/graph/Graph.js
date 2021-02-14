@@ -17,7 +17,7 @@ export default class Graph extends CanvasDrawingContext {
 
     // styling params: can be moved...
 
-    chartStyle = 'line'; // bar, point, line
+    chartStyle = 'bar'; // bar, point, line
 
     fontColor = '#ffffff';
     textXOffset = 0;

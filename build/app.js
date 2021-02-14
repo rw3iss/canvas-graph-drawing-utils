@@ -723,7 +723,7 @@ var Graph = class extends CanvasDrawingContext_default {
     __publicField(this, "yMin");
     __publicField(this, "yMax");
     __publicField(this, "widgets", []);
-    __publicField(this, "chartStyle", "line");
+    __publicField(this, "chartStyle", "bar");
     __publicField(this, "fontColor", "#ffffff");
     __publicField(this, "textXOffset", 0);
     __publicField(this, "textYOffset", -5);

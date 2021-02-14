@@ -5,7 +5,8 @@
 * It is responsive/resizeable. 
 * It supports widgets, which have to override update() and render(). See lib/graph/widgets/MinMaxAvgWidget.ts for example.
 
-![Sample](./src/static/sample.png?raw=true "Sample render")
+![Sample](./src/static/sample.png?raw=true "Sample line graphs")
+![Sample](./src/static/sample2.png?raw=true "Sample bar graph")
 
 ## For Development:
 * Hosted on Preact (just to render the page). The Graph library is completely independent and only required a \<canvas /> element.
