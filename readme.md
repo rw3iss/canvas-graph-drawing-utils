@@ -9,8 +9,8 @@
 ![Sample](./src/static/sample2.png?raw=true "Sample bar graph")
 
 ## For Development:
-* Hosted on Preact (just to render the page). The Graph library is completely independent and only required a \<canvas /> element.
-* Uses esbuild as builder, with sass integration. 
+* Hosted on Preact (just to render the page). The Graph library is completely independent and only requires a \<canvas /> element.
+* Uses esbuild as builder/bundler, with sass integration. 
 * Nodemon is used to monitor source files and rebuild them to build folder. 
 * Browser-sync can be started (npm run dev) to auto-refresh page, on changes to build folder.
 * (see package.json scripts)
