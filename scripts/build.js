@@ -1,10 +1,10 @@
 var fs = require("fs");
 var path = require("path");
 
-// Config params:
-const APP_BASE = 'src';
-const ENTRY_FILE = 'index.tsx';
-const OUTPUT_DIR = 'build';
+// Config params (relative to where npm/script is called from):
+const APP_BASE = './src';
+const ENTRY_FILE = `index.tsx`;
+const OUTPUT_DIR = './build';
 const OUTPUT_FILE = 'app.js';
 const IS_DEV = false;
 const TARGET = 'es2018';

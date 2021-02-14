@@ -1,14 +1,14 @@
 const bs = require('browser-sync').create();
 
+// Config params (relative to where npm/script is called from):
 const PORT = 4000;
+const OUTPUT_DIR = './build';
 
-bs.watch('build/**/*.js', function (event, file) {
-    //console.log("js changed", file);
+bs.watch(`${OUTPUT_DIR}/**/*.js`, function (event, file) {
     bs.reload("*.js");
 })
 
-bs.watch('build/**/*.css', function (event, file) {
-    //console.log("css changed", file);
+bs.watch(`${OUTPUT_DIR}/**/*.css`, function (event, file) {
     if (event === "change") {
         bs.reload("*.css");
     }
@@ -16,8 +16,8 @@ bs.watch('build/**/*.css', function (event, file) {
 
 bs.init({
     port: PORT,
-    server: "./build", 
-    serveStatic: [['./build/static/']],
+    server: OUTPUT_DIR, 
+    serveStatic: [`${OUTPUT_DIR}/static/`],
     //cors: true,
     browser: "google chrome",  // [ "google chrome", "firefox"]
     open: "local", // false

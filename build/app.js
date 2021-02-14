@@ -632,7 +632,7 @@ var import_preact3 = __toModule(require_preact());
 // src/components/shared/Graph/index.tsx
 var import_preact2 = __toModule(require_preact());
 
-// src/components/shared/Graph/CanvasDrawingContext.js
+// src/lib/graph/CanvasDrawingContext.js
 var CanvasDrawingContext = class {
   constructor(context) {
     __publicField(this, "ctx");
@@ -712,7 +712,7 @@ var CanvasDrawingContext = class {
 };
 var CanvasDrawingContext_default = CanvasDrawingContext;
 
-// src/components/shared/Graph/Graph.js
+// src/lib/graph/Graph.js
 var Graph = class extends CanvasDrawingContext_default {
   constructor(canvasContext, width, height) {
     super(canvasContext);
@@ -837,7 +837,7 @@ var Graph = class extends CanvasDrawingContext_default {
 };
 var Graph_default = Graph;
 
-// src/components/shared/Graph/widgets/MinMaxAvgWidget.js
+// src/lib/graph/widgets/MinMaxAvgWidget.js
 var MinMaxAvgWidget = class {
   constructor() {
     __publicField(this, "minimum", Number.MAX_VALUE);

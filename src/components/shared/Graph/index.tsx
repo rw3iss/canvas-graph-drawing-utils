@@ -1,7 +1,7 @@
 import { h, Component, createRef } from 'preact';
 import Button from '../../shared/Button';
-import Graph from './Graph';
-import MinMaxAvgWidget from './widgets/MinMaxAvgWidget';
+import Graph from '../../../lib/graph/Graph';
+import MinMaxAvgWidget from '../../../lib/graph/widgets/MinMaxAvgWidget';
 import './style.scss';
 
 export default class GraphPage extends Component {
